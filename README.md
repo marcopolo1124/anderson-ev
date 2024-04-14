@@ -2,6 +2,7 @@ Task 1:
 This is a git repository
 
 Task 2:
+See .github folder
 
 Task 3:
 See drawio diagram in the root folder of this project
