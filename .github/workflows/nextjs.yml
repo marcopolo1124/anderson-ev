@@ -59,6 +59,7 @@ jobs:
           path: ./
       - run: git config --global user.name 'marcopolo1124'
       - run: git config --global user.email 'leungtc63@gmail.com'
+      - run: git config --global user.password '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
       - run: npm version patch -m "[RELEASE] %s"
       - run: git push
       
