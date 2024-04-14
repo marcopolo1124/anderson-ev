@@ -54,6 +54,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./
+      - run: git config --global user.name 'Marco Leung'
+      - run: git config --global user.email 'leungtc63@gmail.com'
       - run: npm version patch -m "[RELEASE] %s"
       - run: git push 
       
