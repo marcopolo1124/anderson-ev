@@ -59,11 +59,6 @@ jobs:
           path: ./
       - run: git config --global user.name 'marcopolo1124'
       - run: git config --global user.email 'leungtc63@gmail.com'
-      - name: Push changes
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          git push https://marcopolo1124:${GH_TOKEN}@github.com/marcopolo1124/andersen-ev.git main
       - run: npm version patch -m "[RELEASE] %s"
-      - run: git push
+      - run: git push 
       
