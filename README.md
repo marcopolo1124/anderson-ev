@@ -4,7 +4,6 @@ This is a git repository
 Task 2:
 See .github folder
 The directory can be found as an artifact of the workflow
-I can't quite make the version bumping work
 
 Task 3:
 See drawio diagram in the root folder of this project
