@@ -57,9 +57,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./
-      - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
       - run: git config --global user.name 'marcopolo1124'
       - run: git config --global user.email 'leungtc63@gmail.com'
       - run: npm version patch -m "[RELEASE] %s"
